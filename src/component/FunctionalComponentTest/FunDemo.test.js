@@ -31,7 +31,7 @@ test("testing getByAllRole" ,()=>{
     for(let i=0;i<btn.length;i++){
         expect(btn[i]).toBeInTheDocument()
     }
-    //testing of select
+    //testing of select drop down
     const opt = screen.getAllByRole('option');
     for(let i=0;i<opt.length;i++){
         expect(opt[i]).toBeInTheDocument()
