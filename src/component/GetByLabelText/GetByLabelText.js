@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const InputBox = () => {
+export const GetByLabelText = () => {
   return (
     <div>
         <label htmlFor='user_name'>User name</label>
