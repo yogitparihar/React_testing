@@ -1,8 +1,8 @@
 import { fireEvent, render,screen } from "@testing-library/react"
-import { FunDemo } from "./FunDemo"
+import { GetByRole } from "./GetByRole";
 
 test("testing functional component",()=>{
-    render(<FunDemo/>);
+    render(<GetByRole/>);
     const btn = screen.getByTestId('btn1')
     fireEvent.click(btn)
     expect(screen.getByText('hello')).toBeInTheDocument();
@@ -10,7 +10,7 @@ test("testing functional component",()=>{
 
 //Get by role query for single elements
 test("testing using getByRole",()=>{
-    render(<FunDemo/>);
+    render(<GetByRole/>);
     //custom role
     const div = screen.getByRole('form');
     const btn1 = screen.getByRole('button',{name:"Click 1"});
@@ -26,7 +26,7 @@ test("testing using getByRole",()=>{
 
 //getByAll role for multiple elements
 test("testing getByAllRole" ,()=>{
-    render(<FunDemo/>);
+    render(<GetByRole/>);
     const btn = screen.getAllByRole('button');
     for(let i=0;i<btn.length;i++){
         expect(btn[i]).toBeInTheDocument()
