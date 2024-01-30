@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-export const FunDemo = () => {
+export const GetByRole = () => {
   const [data, setData] = useState("");
   const handleClick = () => {
     setData("hello");
