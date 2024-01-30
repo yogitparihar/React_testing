@@ -8,6 +8,7 @@ test("getByLabelText InputBox",()=>{
     expect(input).toHaveValue("")
 })
 
+//testing for the checkBox field
 test("getByLabelText checkBox",()=>{
     render(<GetByLabelText/>)
     const checkBox = screen.getByLabelText("CheckBox");
