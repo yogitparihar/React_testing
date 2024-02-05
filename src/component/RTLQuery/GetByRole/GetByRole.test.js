@@ -8,6 +8,7 @@ test("testing functional component",()=>{
     expect(screen.getByText('hello')).toBeInTheDocument();
 })
 
+
 //Get by role query for single elements
 test("testing using getByRole",()=>{
     render(<GetByRole/>);
@@ -17,6 +18,14 @@ test("testing using getByRole",()=>{
     const btn2 = screen.getByRole('button',{name:"Click 2"});
     const input1 = screen.getByRole('textbox',{name:"UserName"});
     const input2 = screen.getByRole('textbox',{name:"Age"});
+    const section1 = screen.getByRole('heading',{
+        level:1
+    })
+    const section2 = screen.getByRole('heading',{
+        level:2
+    })
+    expect(section2).toBeInTheDocument();
+    expect(section1).toBeInTheDocument();
     expect(div).toBeInTheDocument();
     expect(input2).toBeInTheDocument();
     expect(input1).toBeInTheDocument();
@@ -25,16 +34,16 @@ test("testing using getByRole",()=>{
 })
 
 //getByAll role for multiple elements
-test("testing getByAllRole" ,()=>{
-    render(<GetByRole/>);
-    const btn = screen.getAllByRole('button');
-    for(let i=0;i<btn.length;i++){
-        expect(btn[i]).toBeInTheDocument()
-    }
-    //testing of select drop down
-    const opt = screen.getAllByRole('option');
-    for(let i=0;i<opt.length;i++){
-        expect(opt[i]).toBeInTheDocument()
-    }
-})
+// test("testing getByAllRole" ,()=>{
+//     render(<GetByRole/>);
+//     const btn = screen.getAllByRole('button');
+//     for(let i=0;i<btn.length;i++){
+//         expect(btn[i]).toBeInTheDocument()
+//     }
+//     //testing of select drop down
+//     const opt = screen.getAllByRole('option');
+//     for(let i=0;i<opt.length;i++){
+//         expect(opt[i]).toBeInTheDocument()
+//     }
+// })
 

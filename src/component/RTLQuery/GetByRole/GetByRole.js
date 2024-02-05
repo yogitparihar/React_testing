@@ -7,6 +7,8 @@ export const GetByRole = () => {
   return (
     <div role="form">
       <button data-testid="btn1" onClick={handleClick}>Click test</button>
+      <h1>Section 1</h1>
+      <h2>Section 2</h2>
       <p>{data}</p>
       <button>Click 1</button>
       <button>Click 2</button>
