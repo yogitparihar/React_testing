@@ -3,6 +3,6 @@ import { GetByTestId } from "./GetByTestId"
 
 test("testing with test id",()=>{
     render(<GetByTestId/>)
-    const test = screen.getByTestId('div-test-id')
+    const test = screen.getByTestId('data-testid')
     expect(test).toBeInTheDocument()
 })
