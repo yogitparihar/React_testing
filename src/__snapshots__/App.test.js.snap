@@ -5,49 +5,37 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="App"
-      >
-        <p>
-          Yogit Parihar
-        </p>
+      <div>
         <div>
           <input
-            id="email_id"
-            name="email"
-            placeholder="Email"
+            placeholder="Type and add todo item"
             type="text"
+            value=""
           />
+          <button>
+            Add
+          </button>
         </div>
         <div>
-          <img
-            src="demo.webp"
-            title="demo-img"
-          />
+          <ul />
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="App"
-    >
-      <p>
-        Yogit Parihar
-      </p>
+    <div>
       <div>
         <input
-          id="email_id"
-          name="email"
-          placeholder="Email"
+          placeholder="Type and add todo item"
           type="text"
+          value=""
         />
+        <button>
+          Add
+        </button>
       </div>
       <div>
-        <img
-          src="demo.webp"
-          title="demo-img"
-        />
+        <ul />
       </div>
     </div>
   </div>,
